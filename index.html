@@ -6,27 +6,33 @@
   <title>Starting Lineup</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- Page heading -->
   <h1>Starting Lineup</h1>
 
+  <!-- Form used to collect lineup info -->
   <form id="lineupForm">
 
+    <!-- Selection for lineup status -->
     <fieldset>
       <legend>Status:</legend>
 
       <p>
+        <!-- Draft status option -->
         <input type="radio" id="draft" name="status" value="Draft">
         <label for="draft">Draft</label>
 
+        <!-- Final status option that's prechecked -->
         <input type="radio" id="final" name="status" value="Final" checked>
         <label for="final">Final</label>
       </p>
 
     </fieldset>
 
+    <!-- Selection for game date -->
     <p>
       <label for="gameDate">Date:</label>
 
@@ -39,6 +45,7 @@
       </select>
     </p>
 
+    <!-- Selection for players -->
     <fieldset>
       <legend>Players:</legend>
 
@@ -69,13 +76,15 @@
   
     </fieldset>
 
+    <!-- Submit button for the JavaScript function-->
     <p>
       <input type="submit" value="Submit">
     </p>
 
   </form>
 
-  <h3 id="result"></h3>
+  <!-- Place where JavaScript will display the lineup stuff -->
+  <pre id="result"></pre>
 
   <script src="script.js"></script>
 
